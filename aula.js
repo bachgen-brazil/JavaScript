@@ -1,0 +1,55 @@
+function Soma(){
+    let n1 = Number(prompt("Informe um numero:"));
+    let n2 = Number(prompt("Informe um segundo numero:"));
+    soma = n1+n2;
+    alert(`O valor da soma é ${soma}`);
+}
+function Numeros() {
+    let n1 = Number(prompt("Informe um numero:"));
+    let n2 = Number(prompt("Informe um segundo numero:"));
+
+    if (n2>n1){
+        alert(`O segundo valor informado ${n2} é maior que ${n1}`);
+    }else{
+        alert(`O segundo valor informado ${n1} é maior que ${n2}`);
+    }
+
+ }
+ function ParImpar(){
+    let n1 = Number(prompt("Informe um numero:"));
+    if (n1 % 2 == 0){
+        alert(`O valor informado é PAR`);
+    }else{
+        alert(`O valor informado é Impar`);
+    }
+}
+function Salario(){
+    let sal = Number(prompt('Informe o salario:'));
+    cal15 = (sal*0.15)+sal;
+    alert(`O salario com aumento de 15% ${cal15.toFixed(2)}`);
+}
+function Na100(){
+    for (i=0;i<=100;i++){
+    console.log(i)
+    }
+}
+function Start(){
+    let n1 = Number(prompt('DIGITE A OPÇÃO DESEJADA\n1. Escreva uma função que lê dois números e informa a soma dos dois\n2. Escreva uma função que lê dois números e informe qual é o maior ou se eles são iguais\n3.Escreva uma função que lê um número e informa se ele é par ou ímpar\n4.Escreva uma função que lê o salário de um funcionário e informa o mesmo salário com um aumento de 15%\n5. Escreva uma função que imprima todos os números inteiros de 0 a 100.'));
+
+switch(n1){
+    case 1:
+        Soma();
+    case 2:
+        Numeros();
+    case 3:
+        ParImpar();
+    case 4:
+        Salario();
+    case 5:
+        Na100();
+    default:
+        alert('Nenhum Numero Válido Informado');
+        Start();
+}
+}
+Start();
