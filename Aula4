@@ -1,0 +1,26 @@
+let numeros = [5.5,6,4.3,7,3.2,8.2]
+let contador = 0
+for(i in numeros){
+    if(numeros[i]>=6){
+    }else if(numeros[i]<6){
+        while(numeros[i]<6){
+            numeros[i] = numeros[i]+1
+            contador++
+        }
+    }
+    console.log('Nota(',Number(i)+1,') - Quatidade de Correções(',contador,')',numeros[i])
+    contador = 0
+}
+
+
+let x = Number(prompt("N1:"));
+let y = Number(prompt("N2:"));
+let z = Number(prompt("N3:"));
+
+function ArrayNota(x,y,z){
+    var Media = [x,y,z];
+    console.log(`MEDIA  ${((Media[0]+(Media[1]/2)+Media[2])/3).toFixed(2)};`);
+}
+
+ArrayNota(x,y,z);
+
